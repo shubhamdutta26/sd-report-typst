@@ -1,0 +1,19 @@
+title: sd-report
+author: Shubham Dutta, Ph.D.
+version: 0.0.1
+quarto-required: ">=1.11.0"
+contributes:
+  formats:
+    typst:
+      template-partials:
+        - typst-template.typ
+        - typst-show.typ
+date: today
+date-format: "MMMM D, YYYY"
+knitr:
+  opts_chunk: 
+    dev: "ragg_png"
+    dpi: 300
+execute:
+  echo: true
+  warning: false

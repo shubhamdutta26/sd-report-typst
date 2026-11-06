@@ -1,0 +1,41 @@
+---
+title: "Antibody Engineering and Characterization"
+subtitle: "Biophysical and Functional Assessment of Lead Candidates"
+author:
+  - name: Shubham Dutta, Ph.D.
+    email: shubham.dutta@umassmed.edu
+    # orcid: 0009-0007-1967-8304
+    affiliations:
+      - name: NHPRR, UMass Chan Medical School
+format:
+  sd-report-typst: default
+---
+
+# Introduction
+
+This is a reusable scientific report built with Quarto, R, and Typst.
+
+# Results
+
+```{r}
+#| label: fig-example
+#| fig-cap: "Example R plot"
+
+library(ggplot2)
+
+systemfonts::register_variant(
+  name = "Libertinus Normal",
+  family = "Libertinus Sans",
+  weight = "normal"
+)
+
+ggplot(pressure, aes(temperature, pressure)) +
+  geom_line() +
+  geom_point(color = "steelblue") +
+  theme_bw() +
+  theme(text = element_text(family = "Libertinus Normal"))
+```
+
+# Discussion
+
+This section can contain prose, tables, citations, and results. See @fig-example.
