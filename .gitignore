@@ -2,3 +2,16 @@
 .Rhistory
 .RData
 .Ruserdata
+.DS_Store
+*.pdf
+/*_files/
+*.html
+/.quarto/
+_site/
+docs/
+.vscode/
+.Renviron
+**/*.quarto_ipynb
+template.html
+template_files/
+sd-report.Rproj
