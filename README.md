@@ -3,7 +3,7 @@
 ## Installing
 
 ```bash
-quarto use template shubhamdutta26/sd-report
+quarto use template shubhamdutta26/sd-report-typst
 ```
 
 This will install the format extension and create an example qmd file
