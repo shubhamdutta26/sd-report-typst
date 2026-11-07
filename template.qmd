@@ -7,8 +7,14 @@ author:
     # orcid: 0009-0007-1967-8304
     affiliations:
       - name: NHPRR, UMass Chan Medical School
+date: today
+date-format: "MMMM D, YYYY"
 format:
   sd-report-typst: default
+knitr:
+  opts_chunk: 
+    dev: "ragg_png"
+    dpi: 300
 ---
 
 # Introduction
