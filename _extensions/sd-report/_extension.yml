@@ -8,12 +8,6 @@ contributes:
       template-partials:
         - typst-template.typ
         - typst-show.typ
-date: today
-date-format: "MMMM D, YYYY"
-knitr:
-  opts_chunk: 
-    dev: "ragg_png"
-    dpi: 300
 execute:
   echo: true
   warning: false
