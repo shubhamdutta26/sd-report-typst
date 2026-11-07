@@ -19,13 +19,8 @@ knitr:
 
 # Introduction
 
-This is a reusable scientific report built with Quarto, R, and Typst.
-
-# Results
-
 ```{r}
-#| label: fig-example
-#| fig-cap: "Example R plot"
+#| label: setup
 
 library(ggplot2)
 
@@ -35,11 +30,37 @@ systemfonts::register_variant(
   weight = "normal"
 )
 
-ggplot(pressure, aes(temperature, pressure)) +
+sd_cols <- c(
+    `green`   = "#00a5a6",
+    `pink`    = "#e03d90",
+    `orange`  = "#fc6538",
+    `purple`  = "#6a3ecb",
+    `blue`    = "#0058dc",
+    `brown`   = "#a75237"
+  )
+
+theme_set(theme_bw())
+update_theme(
+  plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm"),
+  text = element_text(family = "Libertinus Normal"),
+)
+```
+
+This is a reusable scientific report built with Quarto, R, and Typst.
+
+# Results
+
+```{r}
+#| label: fig-example
+#| fig-cap: "Example R plot"
+
+plot <- ggplot(pressure, aes(temperature, pressure)) +
   geom_line() +
   geom_point(color = "steelblue") +
   theme_bw() +
   theme(text = element_text(family = "Libertinus Normal"))
+
+plot
 ```
 
 # Discussion
